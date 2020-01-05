@@ -1,0 +1,53 @@
+/* Breadcrumb
+------------------------------------------------------------*/
+.c-breadcrumb{
+    padding: 0px;
+    margin-top: 20px;
+    display: inline-block;
+	nav{
+        display: inline-block;
+        position: relative;
+        ul{
+            li{
+                display: inline-block;
+                float: left;
+            }
+            li:first-child:before{
+                font-family: "Font Awesome 5 Free";
+                content: "\f015";
+                display: inline-block;
+                padding-right: 5px;
+                vertical-align: middle;
+                font-weight: 900;
+            }
+            li:not(:last-child):after{
+                font-family: "Font Awesome 5 Free";
+                content: "\f054";
+                display: inline-block;
+                padding-right: 5px;
+                vertical-align: middle;
+                font-weight: 900;
+                font-size: 10px;
+            }
+            li:after{
+                padding: 0px 7px;
+                content: "";
+                display: inline-block;
+            }
+        }
+    }
+    &__focus{
+        height: 1px;
+        width: 43px;
+        background-color: #cccccc;
+        display: block;
+        position: absolute;
+        bottom: 3px;
+        left: 22px;
+    }
+}
+.c-breadcrumb2{
+    border: 1px solid #cccccc;
+    padding-bottom: 14px;
+    margin-bottom: 1px;
+}

@@ -1,0 +1,88 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer{
+    // padding: 20px 20px;
+    // background: #051a2b;
+    // color: #fff;
+    // text-align: center;
+    &__columns{
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__left{
+        float: left;
+        width: 300px;
+        margin-right: 10px;
+        nav{
+            ul{
+                li:not(:first-child):before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f111";
+                    display: inline-block;
+                    padding-right: 5px;
+                    vertical-align: middle;
+                    font-weight: bold;
+                    font-size: 6px;
+                }
+            }
+        }
+    }
+    &__title:first-child{
+        font-weight: bold;
+    }
+    &__title:first-child:after{
+        content: "";
+        background-color: #cccccc;
+        width: 100%;
+        height: 1px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    &__center{
+        float: left;
+        width: calc(100% - 700px);
+        nav{
+            ul{
+                li:not(:first-child):before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f054";
+                    display: inline-block;
+                    padding-right: 5px;
+                    vertical-align: middle;
+                    font-weight: bold;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    &__right{
+        float: right;
+        width: calc(100% - 700px);
+        nav{
+            ul{
+                li:not(:first-child):before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f0c1";
+                    display: inline-block;
+                    padding-right: 5px;
+                    vertical-align: middle;
+                    font-weight: bold;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+.c-copyright{
+    margin-top: 15px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    p{
+        padding: 20px;
+        display: inline-block
+    }
+}
