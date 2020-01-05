@@ -3,8 +3,13 @@ $(document).ready( ()=>{
     var url = window.location.href; 
     // passes on every "a" tag 
     $("#c-gnav a").each(function() {
+        var origin = window.location.origin+"/";
         if(url == (this.href)) {
             $(this).closest("li").addClass("is_active");
+        } else {
+            if(url == origin){
+                $("li:first-child").addClass("is_active");
+            }
         }
     });
     
